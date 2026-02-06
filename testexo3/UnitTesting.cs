@@ -21,7 +21,7 @@ namespace exo3_.Tests
             TestContext.WriteLine($"Test: {day}/{month}/{year} | Attendu: {expected}");
 
             // Act
-            int actual = Class1.CalculateDayIndexInYear(month, day, year);
+            int actual = CalculateDay.CalculateDayIndexInYear(month, day, year);
 
             // Assert
             TestContext.WriteLine($"Obtenu: {actual}");
@@ -39,7 +39,7 @@ namespace exo3_.Tests
             TestContext.WriteLine($"Test: {day}/{month}/{year} (Bissextile) | Attendu: {expected}");
 
             // Act
-            int actual = Class1.CalculateDayIndexInYear(month, day, year);
+            int actual = CalculateDay.CalculateDayIndexInYear(month, day, year);
 
             // Assert
             TestContext.WriteLine($"Obtenu: {actual}");
@@ -57,7 +57,7 @@ namespace exo3_.Tests
 
             // Act & Assert
             Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                Class1.CalculateDayIndexInYear(month, day, year));
+                CalculateDay.CalculateDayIndexInYear(month, day, year));
 
             TestContext.WriteLine("Résultat: L'exception attendue a bien été interceptée.");
         }
@@ -73,7 +73,7 @@ namespace exo3_.Tests
             TestContext.WriteLine($"Test siècle bissextile: {day}/{month}/{year} | Attendu: {expected}");
 
             // Act
-            int actual = Class1.CalculateDayIndexInYear(month, day, year);
+            int actual = CalculateDay.CalculateDayIndexInYear(month, day, year);
 
             // Assert
             TestContext.WriteLine($"Obtenu: {actual}");
@@ -91,7 +91,7 @@ namespace exo3_.Tests
             TestContext.WriteLine($"Test fin d'année bissextile: {day}/{month}/{year} | Attendu: {expected}");
 
             // Act
-            int actual = Class1.CalculateDayIndexInYear(month, day, year);
+            int actual = CalculateDay.CalculateDayIndexInYear(month, day, year);
 
             // Assert
             TestContext.WriteLine($"Obtenu: {actual}");

@@ -30,7 +30,7 @@ namespace test
                 }
 
                 // 2. Appel de ta logique métier (exo3_)
-                int result = exo3_.Class1.CalculateDayIndexInYear(m, d, y);
+                int result = exo3_.CalculateDay.CalculateDayIndexInYear(m, d, y);
 
                 // 3. Feedback de succès
                 ShowFeedback($"Succès ! C'est le jour {result} de l'année.", Brushes.Cyan);
