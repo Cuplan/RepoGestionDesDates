@@ -1,0 +1,33 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Date Index Calculator" Height="400" Width="350"
+        Background="#1E1E1E" WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="30">
+        <TextBlock Text="INDEX CALCULATOR" Foreground="Magenta" 
+                   FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <TextBlock Text="Jour" Foreground="Gray" Margin="0,5,0,2"/>
+        <TextBox x:Name="TxtDay" Background="#2D2D2D" Foreground="White" BorderThickness="0" Padding="8"/>
+
+        <TextBlock Text="Mois" Foreground="Gray" Margin="0,15,0,2"/>
+        <TextBox x:Name="TxtMonth" Background="#2D2D2D" Foreground="White" BorderThickness="0" Padding="8"/>
+
+        <TextBlock Text="Année" Foreground="Gray" Margin="0,15,0,2"/>
+        <TextBox x:Name="TxtYear" Background="#2D2D2D" Foreground="White" BorderThickness="0" Padding="8"/>
+
+        <Button Content="CALCULER" Margin="0,30,0,0" Height="40" 
+                Background="Magenta" Foreground="White" FontWeight="Bold"
+                Click="BtnCalculate_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBlock x:Name="LblResult" Margin="0,20,0,0" TextAlignment="Center"
+                   FontSize="18" Foreground="Cyan" TextWrapping="Wrap"/>
+    </StackPanel>
+</Window>
