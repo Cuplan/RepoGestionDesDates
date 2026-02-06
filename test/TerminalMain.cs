@@ -2,7 +2,7 @@
 
 namespace test
 {
-    internal class Program
+    internal class TerminalMain
     {
         static void Main(string[] args)
         {
@@ -26,7 +26,7 @@ namespace test
 
                     // 2. Appel de ta méthode (Arrange & Act)
                     Console.WriteLine($"\n[LOG] Calcul pour le {jour}/{mois}/{annee}...");
-                    int index = exo3_.Class1.CalculateDayIndexInYear(mois, jour, annee);
+                    int index = exo3_.CalculateDay.CalculateDayIndexInYear(mois, jour, annee);
 
                     // 3. Résultat (Assert visuel)
                     Console.ForegroundColor = ConsoleColor.Green;

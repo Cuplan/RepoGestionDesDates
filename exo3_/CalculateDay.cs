@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exo3_
 {
-    public class Class1
+    public class CalculateDay
     {
 
         public static int CalculateDayIndexInYear(int monthNumber, int dayNumberInMonth, int yearNumber)
